@@ -10,7 +10,7 @@ jobs:
       - name: run install
         run: make install
       - run: make npm run build
-        needs: run install
+          needs: run install
       - run: make start
       - run: make test
       - run: make lint
