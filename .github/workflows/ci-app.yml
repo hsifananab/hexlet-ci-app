@@ -7,17 +7,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: make setup
+      - run: make install
+      - run: make npm run build
+      - run: make start
       - run: make test
       - run: make lint
-# В этой самостоятельной мы сделаем воркфлоу для рабочего приложения.
-
-# Форкните репозиторий hexlet-ci-app
-
-# Изучите ридми репозитория
-
-# Создайте воркфлоу. В нём должны быть: сетап проекта, запуск тестов и линтера
-
-# Запушьте все изменения на гитхаб и проверьте, что воркфлоу выполнился успешно
-
-# Добавьте в README.md бейдж со ссылкой на Github Actions
